@@ -22,6 +22,7 @@ To compile and run the project, follow these steps:
 ```bash
 git clone https://github.com/fatmhanafow/MyStudentProject.git
 cd MyStudentProject
+```
 
 ### 2. Compile and run the program:
 
@@ -30,7 +31,7 @@ If you are using a Linux/Mac system, open a terminal and use the following comma
 ```bash
 g++ main.cpp -o bstDict
 ./bstDict
-
+```
 ### 3. Saving Data to CSV
 
 The program can save the tree data to a CSV file for backup or sharing purposes. The file will be named `dictionary.csv`, and each English word will be stored on a new line. The CSV file will only contain the English words, without their meanings, for simplicity.
