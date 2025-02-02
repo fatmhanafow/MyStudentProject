@@ -1,4 +1,3 @@
-# MyStudentProject
 # Dictionary Project (BST Implementation)
 
 This is a simple dictionary application using a Binary Search Tree (BST) in C++. It stores English words and allows you to perform basic operations like inserting words, searching for words, deleting words, and displaying them in various traversal orders (In-order, Pre-order, Post-order). The tree structure can be saved to a CSV file for future use.
@@ -13,7 +12,7 @@ This is a simple dictionary application using a Binary Search Tree (BST) in C++.
 
 ## Prerequisites
 
-Before running this program, make sure you have a C++ compiler installed. The program has been written and tested with C++11.
+Before running this program, make sure you have a C++ compiler installed.  
 
 ## Compilation and Execution
 
@@ -21,3 +20,5 @@ To compile and run the project, follow these steps:
 
 ### 1. Clone the repository:
 ```bash
+git clone https://github.com/fatmhanafow/MyStudentProject.git
+cd MyStudentProject
