@@ -1,12 +1,12 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <algorithm>  // For transforming strings to lowercase
+#include <algorithm> 
 using namespace std;
 
 // Node structure for the tree
 struct Node {
-    string englishWord;  // Only English word is stored in the node
+    string englishWord; 
     Node* left;
     Node* right;
 
