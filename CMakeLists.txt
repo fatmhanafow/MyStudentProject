@@ -1,8 +1,37 @@
-# Assuming your project source files are in the same directory as CMakeLists.txt
-add_executable(MyStudentProject main.cpp)
+cmake_minimum_required(VERSION 3.10)
+project(DictionaryProject)
 
-# Add the GoogleTest library directory
-link_directories(C:/Users/Webhouse/googletest/build/lib/Debug)
+# Set C++ standard
+set(CMAKE_CXX_STANDARD 11)
 
-# Link gtest, gmock, and their main libraries to your project
-target_link_libraries(MyStudentProject gtest gtest_main gmock gmock_main)
+# Include directories
+include_directories(${PROJECT_SOURCE_DIR})
+
+# Add source files
+set(SOURCES
+    main.cpp
+    bst.cpp  # Add other source files here
+)
+
+# Create the main executable
+add_executable(DictionaryProject ${SOURCES})
+
+# ----------- Google Test Setup --------------
+# Find Google Test
+find_package(GTest REQUIRED)
+
+# Link Google Test libraries
+target_link_libraries(DictionaryProject gtest gtest_main)
+
+# Create the test executable
+set(TEST_SOURCES
+    test_bst.cpp  # Add your test source files here
+)
+
+add_executable(DictionaryProjectTests ${TEST_SOURCES})
+
+# Link test executable with Google Test
+target_link_libraries(DictionaryProjectTests gtest gtest_main)
+
+# Add the test to the testing suite
+add_test(NAME DictionaryTest COMMAND DictionaryProjectTests)
