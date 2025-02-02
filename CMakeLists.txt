@@ -1,17 +1,8 @@
-cmake_minimum_required(VERSION 3.10)
-
-project(MyStudentProject)
-
-set(CMAKE_CXX_STANDARD 11)
-
-# Add googletest subdirectory
-add_subdirectory(C:/Users/Webhouse/googletest)
-
-# Your executable
+# Assuming your project source files are in the same directory as CMakeLists.txt
 add_executable(MyStudentProject main.cpp)
 
-# Link GoogleTest
-target_link_libraries(MyStudentProject gtest gtest_main)
+# Add the GoogleTest library directory
+link_directories(C:/Users/Webhouse/googletest/build/lib/Debug)
 
-enable_testing()
-add_test(NAME MyTest COMMAND MyStudentProject)
+# Link gtest, gmock, and their main libraries to your project
+target_link_libraries(MyStudentProject gtest gtest_main gmock gmock_main)
