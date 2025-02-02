@@ -42,3 +42,7 @@ After performing any operation in the program, you can save the data by selectin
 
 If you'd like to contribute to this project, feel free to fork the repository, make changes, and create a pull request. You can also open an issue if you find any bugs or have suggestions for improvements.
 
+
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
